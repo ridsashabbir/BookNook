@@ -1,0 +1,37 @@
+.custom-table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    width: 100%;
+  }
+  
+  .custom-header th {
+    border: 2px solid grey;
+    border-radius: 0.375rem;
+    padding: 0.5rem ;
+    color: rgb(26, 88, 26);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:gainsboro
+  }
+  
+  .custom-body td {
+    border: 2px solid grey;
+    border-radius: 0.375rem;
+    padding: 0.5rem ;
+  }
+  
+  .custom-body td:first-child {
+    /* border-right: none; */
+    border-right: 2px solid #808080;
+  }
+  
+  .custom-body td:last-child {
+    /* border-left: none; */
+    border-left: 2px solid grey;
+  }
+  
+  .custom-body tr:last-child td {
+    border-bottom: 2px solid grey;
+  }
+  
