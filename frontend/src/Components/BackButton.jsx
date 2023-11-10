@@ -10,7 +10,20 @@ const BackButton = ({ destination = "/" }) => {
         to={destination}
         className="bg-sky-800 text-white px-4 py-1 rounded-lg w-fit"
       >
-        <BsArrowLeft className="text-2xl" />
+        <BsArrowLeft
+          className="text-2xl"
+          style={{
+            border: "2px solid purple",
+            padding: "5px", // Adjust padding as needed
+            borderRadius: "5px",
+            color: "white",
+            backgroundColor: "purple",
+            width: "30px", // Adjust the width value as needed
+            textAlign: "center",
+            fontWeight: "bold",
+            fontSize: "25px",
+          }}
+        />
       </Link>
     </div>
   );

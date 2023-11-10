@@ -1,0 +1,33 @@
+.container {
+    margin: 20px;
+  }
+  
+  .header {
+    font-size: 24px;
+    color: #701a70; /* Purple color */
+    margin-bottom: 10px;
+    /* text-align: center; */
+  }
+  
+  .book-container {
+    border: 2px solid gray; /* Light Sky Blue color */
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+  }
+  
+  .info-item {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2F4F4F; /* Dark Slate Gray color */
+  }
+  
+  .content {
+    font-size: 18px;
+    color: #000080; /* Navy color */
+  }
+  
