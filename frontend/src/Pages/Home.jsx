@@ -25,7 +25,10 @@ const Home = () => {
   }, []);
   return (
     <div className="p-4 flex flex-col items-center">
-      <h1 className="text-3xl my-8" style={{ textAlign: "center" }}>
+      <h1
+        className="text-3xl my-8"
+        style={{ textAlign: "center", color: " #701a70" }}
+      >
         Books List
       </h1>
       <div className="mt-4 self-end">

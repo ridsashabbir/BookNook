@@ -37,7 +37,7 @@ const CreateBooks = () => {
       <BackButton />
       <h1
         className="text-3xl my-4"
-        style={{ color: "purple", textAlign: "center" }}
+        style={{ color: " #701a70", textAlign: "center" }}
       >
         Create Book
       </h1>
