@@ -1,0 +1,33 @@
+.custom-container {
+    border: 2px solid gray; /* Sky Blue color */
+    border-radius: 5px;
+    padding: 30px;
+    width: 250px;
+    margin: auto;
+  }
+  
+  .custom-input {
+    border: 2px solid #808080; /* Gray color */
+    padding: 8px;
+    width: 90%;
+    border-radius: 5px;
+    /* margin-right: 10px; */
+  }
+  
+  .custom-button {
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-left: 40%;
+    cursor: pointer;
+  }
+  
+  
