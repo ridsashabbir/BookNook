@@ -35,29 +35,29 @@ const ShowBook = () => {
       ) : (
         <div className="book-container">
           <div className="info-item">
-            <span className="label">Id:</span>
+            <span className="label">Id: </span>
             <span className="content">{book._id}</span>
           </div>
           <div className="info-item">
-            <span className="label">Title:</span>
+            <span className="label">Title: </span>
             <span className="content">{book.title}</span>
           </div>
           <div className="info-item">
-            <span className="label">Author:</span>
+            <span className="label">Author: </span>
             <span className="content">{book.author}</span>
           </div>
           <div className="info-item">
-            <span className="label">Publish Year:</span>
+            <span className="label">Publish Year: </span>
             <span className="content">{book.publishYear}</span>
           </div>
           <div className="info-item">
-            <span className="label">Create Time:</span>
+            <span className="label">Create Time: </span>
             <span className="content">
               {new Date(book.createdAt).toString()}
             </span>
           </div>
           <div className="info-item">
-            <span className="label">Last Update Time:</span>
+            <span className="label">Last Update Time: </span>
             <span className="content">
               {new Date(book.updatedAt).toString()}
             </span>
