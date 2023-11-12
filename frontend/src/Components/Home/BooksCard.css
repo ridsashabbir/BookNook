@@ -2,8 +2,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 0.5fr));
     gap: 10px;
-   
+   cursor: pointer;
   }
+  
   
  /* Add these styles to your existing CSS file */
 
@@ -19,6 +20,7 @@
   
     &:hover {
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      background-color: beige;
     }
   }
   
