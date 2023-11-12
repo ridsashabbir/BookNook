@@ -15,6 +15,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+    padding-top: 0;
   
     &:hover {
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
@@ -24,9 +25,9 @@
   .publish-year {
     font-size: 14px; /* Reduce font size for the publish-year */
     font-weight: bold;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     position: absolute;
-    top: 10px;
+    /* top: 10px; */
     right: 10px;
     padding: 6px; /* Adjust padding accordingly */
     background-color: rgb(204, 34, 119);
