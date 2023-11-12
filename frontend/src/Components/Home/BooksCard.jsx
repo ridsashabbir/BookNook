@@ -5,31 +5,32 @@ import { Link } from "react-router-dom";
 import { AiOutlineEdit } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineDelete } from "react-icons/md";
+import "./BooksCard.css"; // Import your CSS file
 
 const BooksCard = ({ books }) => {
   return (
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="books-container">
       {books.map((item) => (
-        <div key={item._id} style={{}}>
-          <h2 style={{}}>{item.publishYear}</h2>
-          <h4 style={{}}>{item._id}</h4>
-          <div>
-            <PiBookOpenTextLight />
-            <h2 style={{}}>{item.title}</h2>
+        <div key={item._id} className="book-card">
+          <h2 className="publish-year">{item.publishYear}</h2>
+          <h4 className="book-id">{item._id}</h4>
+          <div className="icon-text">
+            <PiBookOpenTextLight className="icon" />
+            <h2 className="title">{item.title}</h2>
           </div>
-          <div>
-            <BiUserCircle />
-            <h2 style={{}}>{item.author}</h2>
+          <div className="icon-text">
+            <BiUserCircle className="icon" />
+            <h2 className="author">{item.author}</h2>
           </div>
-          <div>
-            <Link to={`/books/details/${item._id}`}>
-              <BsInfoCircle className="text-2xl text-green-800 hover:text-black" />
+          <div className="icons">
+            <Link to={`/books/details/${item._id}`} className="info">
+              <BsInfoCircle />
             </Link>
-            <Link to={`/books/edit/${item._id}`}>
-              <AiOutlineEdit className="text-2xl text-yellow-600 hover:text-black" />
+            <Link to={`/books/edit/${item._id}`} className="edit">
+              <AiOutlineEdit />
             </Link>
-            <Link to={`/books/delete/${item._id}`}>
-              <MdOutlineDelete className="text-2xl text-red-600 hover:text-black" />
+            <Link to={`/books/delete/${item._id}`} className="delete">
+              <MdOutlineDelete />
             </Link>
           </div>
         </div>
