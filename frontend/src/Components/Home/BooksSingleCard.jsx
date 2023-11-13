@@ -35,7 +35,7 @@ const BooksSingleCard = ({ book }) => {
 };
 
 BooksSingleCard.propTypes = {
-  book: PropTypes.array.isRequired,
+  book: PropTypes.object.isRequired,
 };
 
 export default BooksSingleCard;
