@@ -28,6 +28,7 @@ const BooksSingleCard = ({ book }) => {
       <div className="icons">
         <BiShow
           className="text-3xl text-blue-800 hover:text-black cursor-pointer"
+          style={{ fontSize: "28px", color: "green" }}
           onClick={() => setShowModal(true)}
         />
         <Link to={`/books/details/${book._id}`} className="info">
