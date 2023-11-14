@@ -31,7 +31,10 @@ const BookModal = ({ book, onClose }) => {
         </div>
         <p className="mt-4 book-description">Anything You want to show</p>
         <p className="my-2 book-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit...
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+          commodi nihil itaque distinctio placeat nisi dignissimos facere sit
+          vel esse, similique quidem, repellat molestias qui adipisci rerum,
+          vero harum repudiandae.
         </p>
       </div>
     </div>
