@@ -31,9 +31,29 @@ const BooksTable = ({ books }) => {
               >
                 {index + 1}
               </td>
-              <td>{book.title}</td>
-              <td className="md:hidden">{book.author}</td>
-              <td className="md-hidden">{book.publishYear}</td>
+              <td
+                style={{
+                  textAlign: "center",
+                }}
+              >
+                {book.title}
+              </td>
+              <td
+                className="md:hidden"
+                style={{
+                  textAlign: "center",
+                }}
+              >
+                {book.author}
+              </td>
+              <td
+                className="md-hidden"
+                style={{
+                  textAlign: "center",
+                }}
+              >
+                {book.publishYear}
+              </td>
               <td
                 style={{
                   alignItems: "center",
