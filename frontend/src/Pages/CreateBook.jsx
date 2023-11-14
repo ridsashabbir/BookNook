@@ -4,12 +4,14 @@ import Spinner from "../Components/Spinner";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./CreateBook.css"; // Import your custom CSS file
+import { useSnackbar } from "notistack";
 
 const CreateBooks = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [publishYear, setPublishYear] = useState("");
   const [loading, setLoading] = useState(false);
+  const { enqueueSnackbar } = useSnackbar();
   const navigate = useNavigate();
 
   const handleSaveBook = () => {
@@ -23,11 +25,13 @@ const CreateBooks = () => {
       .post("http://localhost:5555/books", data)
       .then(() => {
         setLoading(false);
+        enqueueSnackbar("Book Created successfully", { variant: "success" });
         navigate("/");
       })
       .catch((error) => {
         setLoading(false);
-        alert("An error happened. Please check the console");
+        // alert("An error happened. Please check the console");
+        enqueueSnackbar("Error", { variant: "error" });
         console.log(error);
       });
   };
