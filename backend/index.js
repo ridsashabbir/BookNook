@@ -32,6 +32,11 @@ app.get("/", (request, response) => {
 // middleware for books router
 app.use("/", booksRoute);
 
+app.use(express.static(path.join(__dirname, "./frontend/dist")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./frontend/dist/index.html"));
+});
+
 mongoose
   .connect(mongoDBURL)
   .then(() => {
